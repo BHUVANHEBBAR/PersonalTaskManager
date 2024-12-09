@@ -1,5 +1,6 @@
 package com.project.taskmgr;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
 public class TaskBean implements Comparable<TaskBean>{
@@ -10,6 +11,7 @@ public class TaskBean implements Comparable<TaskBean>{
 	private Date expDt;
 	private int priority;
 	
+	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	@Override
 	public int compareTo(TaskBean o) {
 		// TODO Auto-generated method stub
